@@ -20,7 +20,7 @@ const About = () => {
   return (
     <section className="about section" id="about">
       <div className="section-title">
-        <h2>About Me and My career</h2>
+        <h2>About Me</h2>
       </div>
 
       <div className="about-slider">
