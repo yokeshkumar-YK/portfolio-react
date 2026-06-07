@@ -1,12 +1,6 @@
-/* =========================
-   GOOGLE FONT
-========================= */
+/* -------------------------------------------- SECTION : 1( Google Font - Global Style - navbar )-----------------------------------*/
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
-
-/* =========================
-   GLOBAL STYLES
-========================= */
 
 * {
   margin: 0;
@@ -40,10 +34,6 @@ a {
   font-size: 42px;
   color: #38bdf8;
 }
-
-/* =========================
-   NAVBAR
-========================= */
 
 .navbar {
   position: fixed;
@@ -98,27 +88,7 @@ a {
   color: #38bdf8;
 }
 
-/* =========================
-   MOBILE NAV
-========================= */
-
-.hamburger {
-  display: none;
-  flex-direction: column;
-  gap: 5px;
-  cursor: pointer;
-}
-
-.hamburger span {
-  width: 28px;
-  height: 3px;
-  background: white;
-  border-radius: 5px;
-}
-
-/* =========================
-   HERO SECTION
-========================= */
+/* ---------------------------------------------------- SECTION : 2( HERO SECTION ) ----------------------------------------*/
 
 .hero {
   min-height: 100vh;
@@ -182,10 +152,7 @@ a {
   max-width: 650px;
   margin-bottom: 35px;
 }
-
-/* =========================
-   BUTTONS
-========================= */
+/* ---------------------------------------------------- SECTION : 3 ( BUTTONS ) ----------------------------------------*/
 
 .hero-buttons {
   display: flex;
@@ -214,9 +181,7 @@ a {
   transform: translateY(-5px);
 }
 
-/* =========================
-   SOCIAL ICONS
-========================= */
+/* ---------------------------------------------------- SECTION : 4 ( SOCIAL ICONS ) ---------------------------------------- */
 
 .social-icons {
   display: flex;
@@ -245,9 +210,7 @@ a {
   transform: translateY(-8px);
 }
 
-/* =========================
-   HERO IMAGE
-========================= */
+/* ---------------------------------------------------- SECTION : 5 ( HERO IMAGE ) ---------------------------------------- */
 
 .hero-image {
   flex: 1;
@@ -298,9 +261,7 @@ a {
   }
 }
 
-/* ===================================
-   ABOUT SECTION
-=================================== */
+/* ---------------------------------------------------- SECTION : 6 ( ABOUT SECTION ) ---------------------------------------- */
 
 .about-slider {
   display: flex;
@@ -323,10 +284,6 @@ a {
 .about-container::-webkit-scrollbar {
   display: none;
 }
-
-/* ===================================
-   ABOUT CARD
-=================================== */
 
 .about-card {
   min-width: 50%;
@@ -374,9 +331,6 @@ a {
   margin-bottom: 14px;
 }
 
-/* ===================================
-   ABOUT BUTTONS
-=================================== */
 
 .about-btn {
   width: 55px;
@@ -409,9 +363,7 @@ a {
   box-shadow: 0 0 20px rgba(56, 189, 248, 0.4);
 }
 
-/* ===================================
-   SKILLS SECTION
-=================================== */
+/* ---------------------------------------------------- SECTION : 7 ( SKILLS SECTION ) ---------------------------------------- */
 
 .skills-container {
   display: grid;
@@ -420,10 +372,6 @@ a {
 
   gap: 30px;
 }
-
-/* ===================================
-   SKILL CARD
-=================================== */
 
 .skill-card {
   background: #111827;
@@ -461,10 +409,6 @@ a {
   font-size: 24px;
 }
 
-/* ===================================
-   SKILL TAGS
-=================================== */
-
 .skill-tags {
   display: flex;
 
@@ -497,20 +441,12 @@ a {
   transform: translateY(-3px);
 }
 
-/* ===================================
-   TABLET RESPONSIVE
-=================================== */
-
 @media (max-width: 1024px) {
   .about-card {
     min-width: 75%;
     max-width: 75%;
   }
 }
-
-/* ===================================
-   MOBILE RESPONSIVE
-=================================== */
 
 @media (max-width: 768px) {
   .about-card {
@@ -534,10 +470,6 @@ a {
   }
 }
 
-/* ===================================
-   SMALL MOBILE
-=================================== */
-
 @media (max-width: 480px) {
   .about-card h3 {
     font-size: 20px;
@@ -556,9 +488,7 @@ a {
     padding: 7px 14px;
   }
 }
-/* ==========================================
-   PROJECTS SECTION
-========================================== */
+/* ------------------------------ SECTION : 8 ( PROJECTS SECTION ) ------------------------------ */
 
 .project-container {
   display: grid;
@@ -591,10 +521,6 @@ a {
   line-height: 1.8;
 }
 
-/* ==========================================
-   PROJECT TECH TAGS
-========================================== */
-
 .project-tech {
   margin-top: 25px;
   display: flex;
@@ -616,10 +542,6 @@ a {
   transform: translateY(-3px);
 }
 
-/* ==========================================
-   CERTIFICATIONS SECTION
-========================================== */
-
 .certificate-slider {
   display: flex;
   align-items: center;
@@ -640,10 +562,6 @@ a {
 .certificate-container::-webkit-scrollbar {
   display: none;
 }
-
-/* ==========================================
-   CERTIFICATE CARD
-========================================== */
 
 .certificate-card {
   min-width: 300px;
@@ -686,10 +604,6 @@ a {
   line-height: 1.7;
 }
 
-/* ==========================================
-   CERTIFICATE BUTTONS
-========================================== */
-
 .slide-btn {
   width: 50px;
   height: 50px;
@@ -719,10 +633,6 @@ a {
 .slide-btn i {
   font-size: 18px;
 }
-
-/* ==========================================
-   RESPONSIVE FIXES
-========================================== */
 
 @media (max-width: 992px) {
   .project-container {
@@ -776,9 +686,7 @@ a {
   }
 }
 
-/* ==========================================
-   EXPERIENCE SECTION
-========================================== */
+/* ---------------------------------------------------- SECTION : 9 ( TIMELINE SECTION ) ------------------------------ */
 
 .timeline {
   position: relative;
@@ -799,9 +707,7 @@ a {
   transform: translateX(-50%);
 }
 
-/* ==========================================
-   TIMELINE ITEM
-========================================== */
+
 
 .timeline-item {
   position: relative;
@@ -816,10 +722,6 @@ a {
 .timeline-item:nth-child(even) {
   left: 50%;
 }
-
-/* ==========================================
-   CONNECTOR LINE
-========================================== */
 
 .timeline-item::before {
   content: "";
@@ -837,10 +739,6 @@ a {
 .timeline-item:nth-child(even)::before {
   left: 0;
 }
-
-/* ==========================================
-   TIMELINE DOT
-========================================== */
 
 .timeline-item::after {
   content: "";
@@ -860,10 +758,6 @@ a {
 .timeline-item:nth-child(even)::after {
   left: -9px;
 }
-
-/* ==========================================
-   TIMELINE CARD
-========================================== */
 
 .timeline-content {
   background: #111827;
@@ -896,19 +790,13 @@ a {
   margin-bottom: 8px;
 }
 
-/* ==========================================
-   ACTIVITIES SECTION
-========================================== */
+/* ---------------------------------------------------- SECTION : 10 ( ACTIVITIES SECTION ) ------------------------------ */
 
 .activities-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 30px;
 }
-
-/* ==========================================
-   ACTIVITY CARD
-========================================== */
 
 .activity-card {
   background: #111827;
@@ -929,10 +817,6 @@ a {
   border-color: #38bdf8;
   box-shadow: 0 0 25px rgba(56, 189, 248, 0.25);
 }
-
-/* ==========================================
-   ACTIVITY ICON
-========================================== */
 
 .activity-icon {
   width: 80px;
@@ -956,10 +840,6 @@ a {
   font-size: 32px;
 }
 
-/* ==========================================
-   ACTIVITY CONTENT
-========================================== */
-
 .activity-card h3 {
   color: #38bdf8;
   margin-bottom: 18px;
@@ -971,10 +851,6 @@ a {
   line-height: 1.9;
   font-size: 15px;
 }
-
-/* ==========================================
-   RESPONSIVE TIMELINE
-========================================== */
 
 @media (max-width: 768px) {
   .timeline::before {
@@ -1024,10 +900,6 @@ a {
   }
 }
 
-/* ==========================================
-   SMALL DEVICES
-========================================== */
-
 @media (max-width: 480px) {
   .timeline-content {
     padding: 22px;
@@ -1046,58 +918,107 @@ a {
   }
 }
 
-/* ==========================================
-   CONTACT SECTION
-========================================== */
+/* -------------------------------------- SECTION 11 : (CONTACT FORM) -----------------------------------------  */
 
-.contact-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 30px;
-}
+.contact-form {
+  max-width: 850px;
+  margin: 0 auto;
 
-.contact-card {
   background: #111827;
+
   padding: 40px;
+
   border-radius: 20px;
-  text-align: center;
 
   border: 1px solid rgba(255, 255, 255, 0.08);
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 20px;
 
   transition: all 0.4s ease;
 }
 
-.contact-card:hover {
-  transform: translateY(-10px);
+.contact-form:hover {
   border-color: #38bdf8;
-  box-shadow: 0 0 25px rgba(56, 189, 248, 0.2);
+  box-shadow: 0 0 25px rgba(56, 189, 248, 0.15);
 }
 
-.contact-card i {
-  font-size: 40px;
-  color: #38bdf8;
-  margin-bottom: 20px;
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+
+  background: #0f172a;
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  border-radius: 12px;
+
+  padding: 16px 18px;
+
+  color: white;
+
+  font-size: 15px;
+
+  font-family: "Poppins", sans-serif;
+
+  outline: none;
+
+  transition: all 0.3s ease;
 }
 
-.contact-card h3 {
-  margin-bottom: 15px;
-  font-size: 22px;
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #94a3b8;
 }
 
-.contact-card p,
-.contact-card a {
-  color: #cbd5e1;
-  text-decoration: none;
-  transition: 0.3s;
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #38bdf8;
+
+  box-shadow: 0 0 10px rgba(56, 189, 248, 0.2);
 }
 
-.contact-card a:hover {
-  color: #38bdf8;
+.contact-form textarea {
+  resize: vertical;
+  min-height: 180px;
 }
 
-/* ==========================================
-   SHARE PORTFOLIO SECTION
-========================================== */
+.contact-form button {
+  background: linear-gradient(
+    135deg,
+    #38bdf8,
+    #9333ea
+  );
+
+  color: white;
+
+  border: none;
+
+  padding: 16px;
+
+  border-radius: 12px;
+
+  font-size: 16px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+.contact-form button:hover {
+  transform: translateY(-4px);
+
+  box-shadow: 0 0 20px rgba(56, 189, 248, 0.3);
+}
+
+.contact-form button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
 
 .share-portfolio {
   margin: 80px auto 0;
@@ -1125,10 +1046,6 @@ a {
   margin-bottom: 25px;
   line-height: 1.8;
 }
-
-/* ==========================================
-   SHARE BUTTONS
-========================================== */
 
 .share-buttons {
   display: flex;
@@ -1171,9 +1088,7 @@ a {
   font-size: 18px;
 }
 
-/* ==========================================
-   FOOTER
-========================================== */
+/* ------------------------ SECTION : 12 ( FOOTER SECTION ) ------------------------------ */
 
 footer {
   margin-top: 80px;
@@ -1194,10 +1109,6 @@ footer p {
   letter-spacing: 0.5px;
 }
 
-/* ==========================================
-   MOBILE NAVBAR
-========================================== */
-
 .hamburger {
   display: none;
   flex-direction: column;
@@ -1216,9 +1127,6 @@ footer p {
   transition: all 0.3s ease;
 }
 
-/* ==========================================
-   TABLET
-========================================== */
 
 @media (max-width: 1024px) {
   .section {
@@ -1246,9 +1154,6 @@ footer p {
   }
 }
 
-/* ==========================================
-   MOBILE
-========================================== */
 
 @media (max-width: 768px) {
   .section {
@@ -1343,9 +1248,6 @@ footer p {
   }
 }
 
-/* ==========================================
-   SMALL DEVICES
-========================================== */
 
 @media (max-width: 480px) {
   .hero-content h1 {
@@ -1380,9 +1282,6 @@ footer p {
   }
 }
 
-/* ==========================================
-   GLOBAL WIDTH FIXES
-========================================== */
 
 .about-slider,
 .certificate-slider {
@@ -1395,10 +1294,6 @@ footer p {
   width: 100%;
 }
 
-/* ==========================================
-   CARD CONSISTENCY
-========================================== */
-
 .skill-card,
 .project-card,
 .contact-card,
@@ -1409,10 +1304,6 @@ footer p {
   will-change: transform;
 }
 
-/* ==========================================
-   SMOOTH TRANSITIONS
-========================================== */
-
 a,
 button,
 .btn,
@@ -1422,20 +1313,19 @@ button,
   transition: all 0.3s ease;
 }
 
-/* ==========================================
-   IMAGE SAFETY
-========================================== */
-
 img {
   max-width: 100%;
   display: block;
 }
 
-/* ==========================================
-   OVERFLOW PROTECTION
-========================================== */
+.contact-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
 
-html,
-body {
-  overflow-x: hidden;
+@media (max-width: 768px) {
+  .contact-row {
+    grid-template-columns: 1fr;
+  }
 }
