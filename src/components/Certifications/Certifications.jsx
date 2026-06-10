@@ -1,3 +1,4 @@
+import "./Certifications.css";
 import { useRef } from "react";
 
 const Certifications = () => {

@@ -1,0 +1,68 @@
+
+.share-portfolio {
+  margin: 80px auto 0;
+  max-width: 1200px;
+
+  background: #111827;
+
+  padding: 35px;
+
+  border-radius: 20px;
+
+  text-align: center;
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.share-portfolio h3 {
+  color: #38bdf8;
+  margin-bottom: 15px;
+  font-size: 28px;
+}
+
+.share-portfolio p {
+  color: #cbd5e1;
+  margin-bottom: 25px;
+  line-height: 1.8;
+}
+
+.share-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.share-buttons button,
+.share-btn {
+  background: #0f172a;
+
+  color: white;
+
+  border: none;
+
+  padding: 14px 20px;
+
+  border-radius: 12px;
+
+  cursor: pointer;
+
+  text-decoration: none;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  transition: all 0.3s ease;
+}
+
+.share-buttons button:hover,
+.share-btn:hover {
+  background: #38bdf8;
+  transform: translateY(-4px);
+}
+
+.share-buttons i,
+.share-btn i {
+  font-size: 18px;
+}

@@ -1,5 +1,5 @@
 import { useRef } from "react";
-
+import "./About.css";
 const About = () => {
   const aboutRef = useRef(null);
 

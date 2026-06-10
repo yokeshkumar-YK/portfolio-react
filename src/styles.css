@@ -1,5 +1,5 @@
 /* -------------------------------------------- SECTION : 1( Google Font - Global Style - navbar )-----------------------------------*/
-
+/*
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 
 * {
@@ -331,7 +331,6 @@ a {
   margin-bottom: 14px;
 }
 
-
 .about-btn {
   width: 55px;
   height: 55px;
@@ -489,59 +488,232 @@ a {
   }
 }
 /* ------------------------------ SECTION : 8 ( PROJECTS SECTION ) ------------------------------ */
+/* ==========================
+   SECTION TITLES
+========================== */
 
-.project-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+.category-title {
+  margin: 60px 0 30px;
+}
+
+.category-title h3 {
+  text-align: center;
+  color: #38bdf8;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+/* ==========================
+   CONTAINERS
+========================== */
+
+.project-container,
+.design-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 30px;
 }
 
-.project-card {
+/* ==========================
+   COMMON CARD STYLES
+========================== */
+
+.project-card,
+.mini-card,
+.design-card {
+  width: 350px;
   background: #111827;
-  padding: 35px;
-  border-radius: 20px;
+  border-radius: 18px;
+  overflow: hidden;
   border: 1px solid rgba(255, 255, 255, 0.08);
-  transition: all 0.4s ease;
+  transition: all 0.3s ease;
 }
 
-.project-card:hover {
-  transform: translateY(-10px);
+.project-card:hover,
+.mini-card:hover,
+.design-card:hover {
+  transform: translateY(-8px);
   border-color: #38bdf8;
-  box-shadow: 0 0 25px rgba(56, 189, 248, 0.2);
+  box-shadow: 0 0 25px rgba(56, 189, 248, 0.15);
 }
 
-.project-card h3 {
+/* ==========================
+   IMAGES
+========================== */
+
+.project-card img,
+.mini-card img,
+.design-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+/* ==========================
+   PROJECT CONTENT
+========================== */
+
+.project-content {
+  padding: 20px;
+}
+
+.project-content h3 {
   color: #38bdf8;
-  margin-bottom: 18px;
-  font-size: 24px;
+  font-size: 1.3rem;
+  margin-bottom: 12px;
 }
 
-.project-card p {
+.project-content p {
   color: #cbd5e1;
-  line-height: 1.8;
+  font-size: 0.95rem;
+  line-height: 1.6;
 }
+
+/* ==========================
+   TECH STACK
+========================== */
 
 .project-tech {
-  margin-top: 25px;
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 8px;
+  margin-top: 16px;
 }
 
 .project-tech span {
   background: #1e293b;
   color: white;
-  padding: 8px 14px;
+  padding: 6px 12px;
   border-radius: 20px;
+  font-size: 12px;
+}
+
+/* ==========================
+   BUTTONS
+========================== */
+
+.project-links {
+  display: flex;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.project-links a {
+  text-decoration: none;
+  background: #38bdf8;
+  color: #0f172a;
+  padding: 10px 16px;
+  border-radius: 8px;
   font-size: 14px;
+  font-weight: 600;
   transition: 0.3s;
 }
 
-.project-tech span:hover {
-  background: #38bdf8;
+.project-links a:hover {
   transform: translateY(-3px);
 }
 
+/* ==========================
+   MINI PROJECTS
+========================== */
+
+.mini-card .project-content h3 {
+  font-size: 1.2rem;
+}
+
+.mini-card .project-content p {
+  font-size: 0.9rem;
+}
+
+.mini-card .project-links a {
+  width: 100%;
+  text-align: center;
+}
+
+/* ==========================
+   DESIGNS
+========================== */
+
+.design-card {
+  border: 1px solid rgba(56, 189, 248, 0.15);
+}
+
+.design-content {
+  padding: 20px;
+  text-align: center;
+}
+
+.design-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.design-content h3 {
+  color: #38bdf8;
+  font-size: 1.3rem;
+  margin: 0;
+}
+
+.design-content p {
+  color: #cbd5e1;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 15px 0;
+}
+
+/* Tool Badge */
+
+.tool-badge {
+  color: #38bdf8;
+  border: 1px solid #38bdf8;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+/* Design Button */
+
+.design-btn {
+  display: inline-block;
+  text-decoration: none;
+  background: #38bdf8;
+  color: #0f172a;
+  font-weight: 600;
+  padding: 10px 18px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.design-btn:hover {
+  transform: translateY(-3px);
+}
+
+/* ==========================
+   MOBILE
+========================== */
+
+@media (max-width: 768px) {
+  .project-card,
+  .mini-card,
+  .design-card {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .project-links {
+    flex-direction: column;
+  }
+
+  .project-links a {
+    text-align: center;
+  }
+}
+/*---------------------------------------------------- SECTION : 8 ( CERTIFICATES SECTION ) ------------------------------ */
 .certificate-slider {
   display: flex;
   align-items: center;
@@ -706,8 +878,6 @@ a {
   background: #38bdf8;
   transform: translateX(-50%);
 }
-
-
 
 .timeline-item {
   position: relative;
@@ -986,11 +1156,7 @@ a {
 }
 
 .contact-form button {
-  background: linear-gradient(
-    135deg,
-    #38bdf8,
-    #9333ea
-  );
+  background: linear-gradient(135deg, #38bdf8, #9333ea);
 
   color: white;
 
@@ -1127,7 +1293,6 @@ footer p {
   transition: all 0.3s ease;
 }
 
-
 @media (max-width: 1024px) {
   .section {
     padding: 80px 6%;
@@ -1153,7 +1318,6 @@ footer p {
     height: 320px;
   }
 }
-
 
 @media (max-width: 768px) {
   .section {
@@ -1248,7 +1412,6 @@ footer p {
   }
 }
 
-
 @media (max-width: 480px) {
   .hero-content h1 {
     font-size: 32px;
@@ -1281,7 +1444,6 @@ footer p {
     font-size: 13px;
   }
 }
-
 
 .about-slider,
 .certificate-slider {
@@ -1329,3 +1491,4 @@ img {
     grid-template-columns: 1fr;
   }
 }
+

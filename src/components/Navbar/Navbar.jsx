@@ -1,4 +1,6 @@
 import { useState } from "react";
+import "./Navbar.css";
+
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);

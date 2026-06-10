@@ -1,3 +1,4 @@
+import "./Experience.css";
 const Experience = () => {
   return (
     <section className="experience section" id="experience">
@@ -10,7 +11,7 @@ const Experience = () => {
           <div className="timeline-content">
             <h3>Software Engineer Intern</h3>
             <h4>Codem Inc.</h4>
-            <p>December 2025 - Present (6 months) Internship</p>
+            <p>December 2025 - june 2026 (6 months) Internship</p>
             <p>Palayankottai, Tamil Nadu, India</p>
           </div>
         </div>

@@ -1,7 +1,8 @@
+import "./Footer.css";
 const Footer = () => {
   return (
     <footer>
-      <p>© 2026 Yokesh Kumar S | All Rights Reserved</p>
+      <p>© 2026 YokeshKumar S | All Rights Reserved</p>
     </footer>
   );
 };

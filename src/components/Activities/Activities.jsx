@@ -1,3 +1,5 @@
+import "./Activities.css";
+
 const Activities = () => {
   return (
     <section className="activities section" id="activities">

@@ -1,3 +1,4 @@
+import "./SharePortfolio.css";
 const SharePortfolio = () => {
   const copyLink = () => {
     navigator.clipboard.writeText(window.location.href);

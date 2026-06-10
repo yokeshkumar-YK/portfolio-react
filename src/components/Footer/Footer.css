@@ -1,0 +1,12 @@
+footer{
+  margin-top:80px;
+  background:#020617;
+  text-align:center;
+  padding:30px;
+  color:#94a3b8;
+  border-top:1px solid rgba(255,255,255,.05);
+}
+
+footer p{
+  font-size:15px;
+}

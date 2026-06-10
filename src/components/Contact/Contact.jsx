@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { supabase } from "../lib/supabase";
-
+import { supabase } from "../../lib/supabase";
+import "./Contact.css";
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
