@@ -34,7 +34,7 @@ const Projects = () => {
       image: "/images/todo-app.png",
       description:
         "Task management application with local storage functionality.",
-      demo: "https://your-demo-link.com",
+      demo: "https://todo-master-yk.netlify.app/",
     },
   ];
 
