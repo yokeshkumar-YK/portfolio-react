@@ -36,6 +36,14 @@ const Projects = () => {
         "Task management application with local storage functionality.",
       demo: "https://todo-master-yk.netlify.app/",
     },
+    {
+    title: "Mini Games Collection",
+    image: "/images/play_zone.png",
+    description:
+      "Fun and Thinking games with difficulty levels, scoring system, and timer.",
+    demo: "https://play-zone-yk.netlify.app/",
+    tech: ["HTML", "CSS", "JavaScript"],
+  }
   ];
 
   const designs = [
