@@ -216,10 +216,10 @@ const Projects = () => {
 
   const miniProjects = [
     {
-      title: "Weather App",
-      image: "/images/weather-app.png",
-      description: "Real-time weather forecasting application.",
-      demo: "https://your-demo-link.com",
+      title: "Tech Fest registration form",
+      image: "/images/Fest-register.png",
+      description: "Register form for the tech fest",
+      demo: "https://tech-fest-registration-yk.netlify.app/",
     },
     {
       title: "To-Do App",
