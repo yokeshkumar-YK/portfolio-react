@@ -1,6 +1,5 @@
-
 .contact-form {
-  max-width: 850px;
+  max-width: 1100px;
   margin: 0 auto;
 
   background: #111827;
@@ -68,6 +67,8 @@
   background: linear-gradient(135deg, #38bdf8, #9333ea);
 
   color: white;
+  width: 800px;
+
 
   border: none;
 
@@ -80,6 +81,7 @@
   font-weight: 600;
 
   cursor: pointer;
+  align-self: center;
 
   transition: all 0.3s ease;
 }
@@ -93,4 +95,10 @@
 .contact-form button:disabled {
   opacity: 0.7;
   cursor: not-allowed;
+}
+
+.contact-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
 }

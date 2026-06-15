@@ -1,4 +1,5 @@
 import "./SharePortfolio.css";
+
 const SharePortfolio = () => {
   const copyLink = () => {
     navigator.clipboard.writeText(window.location.href);
@@ -6,49 +7,32 @@ const SharePortfolio = () => {
   };
 
   return (
-    <div className="share-portfolio">
+    <section className="share-portfolio">
       <h3>Share My Portfolio</h3>
 
       <p>
-        Know someone looking for Frontend, Full Stack Development or UI Design
-        skills? Share my portfolio.
+        Know someone looking for Frontend Development, Full Stack Development,
+        or UI/UX Design skills? Feel free to share my portfolio or contact me
+        directly.
       </p>
 
       <div className="share-buttons">
-        <button onClick={copyLink}>
+        <button onClick={copyLink} className="copy-btn">
           <i className="fa-solid fa-copy"></i>
-          Copy Link
+          <span>Copy Portfolio Link</span>
         </button>
 
-        <a
-          href={`https://wa.me/?text=Check out Yokesh Kumar's Portfolio ${window.location.href}`}
-          target="_blank"
-          rel="noreferrer"
-          className="share-btn"
-        >
-          <i className="fa-brands fa-whatsapp"></i>
-          WhatsApp
+        <a href="tel:+916385574820" className="contact-action">
+          <i className="fa-solid fa-phone"></i>
+          <span>+91 6385574820</span>
         </a>
 
-        <a
-          href={`mailto:?subject=Portfolio Recommendation&body=Check out Yokesh Kumar's Portfolio ${window.location.href}`}
-          className="share-btn"
-        >
+        <a href="mailto:yokeshkumar1910@gmail.com" className="contact-action">
           <i className="fa-solid fa-envelope"></i>
-          Email
-        </a>
-
-        <a
-          href={`https://www.linkedin.com/sharing/share-offsite/?url=${window.location.href}`}
-          target="_blank"
-          rel="noreferrer"
-          className="share-btn"
-        >
-          <i className="fa-brands fa-linkedin"></i>
-          LinkedIn
+          <span>yokeshkumar1910@gmail.com</span>
         </a>
       </div>
-    </div>
+    </section>
   );
 };
 
