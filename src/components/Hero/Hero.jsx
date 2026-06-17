@@ -33,7 +33,7 @@ function Hero() {
           }
         }
       },
-      isDeleting ? 50 : 100
+      isDeleting ? 50 : 100,
     );
 
     return () => clearTimeout(timer);
@@ -63,7 +63,7 @@ function Hero() {
             </a>
 
             <a
-              href="/Yokeshkumar_Resume.pdf"
+              href="/assets/Yokeshkumar_S_17-06-2026.pdf"
               download
               className="btn secondary-btn"
             >
@@ -98,10 +98,7 @@ function Hero() {
 
         <div className="hero-image">
           <div className="image-wrapper">
-            <img
-              src="/assets/profile_photo.png"
-              alt="Yokesh Kumar"
-            />
+            <img src="/assets/profile_photo.png" alt="Yokesh Kumar" />
           </div>
         </div>
       </div>
