@@ -71,7 +71,8 @@
 /* FLIP CARD */
 .flip-card {
   perspective: 1200px;
-  height: 260px;
+  min-height: 320px;
+  height: 320px;
 }
 
 .flip-card-inner {
@@ -104,13 +105,13 @@
 .timeline-content {
   height: 100%;
   background: #111827;
-  padding: 30px;
+  padding: 28px;
   border-radius: 20px;
   border: 1px solid rgba(255, 255, 255, 0.08);
 
-  /* ✅ FIX: proper layout control */
   display: flex;
   flex-direction: column;
+  gap: 10px;
 }
 
 /* TEXT */
@@ -182,14 +183,15 @@
     padding-right: 10px;
   }
 
-  .timeline-item::before {
-    left: 20px;
-    width: 25px;
-  }
+.timeline-item::before {
+  top: 50%;
+  transform: translateY(-50%);
+}
 
-  .timeline-item::after {
-    left: 11px !important;
-  }
+.timeline-item::after {
+  top: 50%;
+  transform: translateY(-50%);
+}
 
   .flip-card {
     height: 300px;
