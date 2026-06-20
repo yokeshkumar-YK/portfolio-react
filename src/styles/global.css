@@ -1,38 +1,159 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-  scroll-behavior:smooth;
+/* =========================
+   GLOBAL RESET
+========================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
-body{
-  font-family:'Poppins',sans-serif;
-  background:#050816;
-  color:white;
-  overflow-x:hidden;
+/* =========================
+   ROOT COLORS
+========================= */
+
+:root {
+  --bg-primary: #FDEB9E;
+  --bg-secondary: #7AE2CF;
+  --accent: #077A7D;
+  --dark: #06202B;
+
+  --text-primary: #06202B;
+  --text-secondary: #077A7D;
+
+  --white: #ffffff;
+
+  --shadow-light: 0 4px 15px rgba(6, 32, 43, 0.08);
+  --shadow-medium: 0 8px 25px rgba(6, 32, 43, 0.15);
+
+  --transition: all 0.3s ease;
 }
 
-a{
-  text-decoration:none;
+/* =========================
+   BODY
+========================= */
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  overflow-x: hidden;
+  line-height: 1.6;
 }
 
-img{
-  max-width:100%;
-  display:block;
+/* =========================
+   LINKS
+========================= */
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: var(--transition);
 }
 
-.section{
-  padding:100px 6%;
+/* =========================
+   IMAGES
+========================= */
+
+img {
+  max-width: 100%;
+  display: block;
 }
 
-.section-title{
-  text-align:center;
-  margin-bottom:60px;
+/* =========================
+   SECTIONS
+========================= */
+
+.section {
+  padding: 100px 6%;
 }
 
-.section-title h2{
-  color:#38bdf8;
-  font-size:42px;
+.section-title {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.section-title h2 {
+  font-size: 42px;
+  font-weight: 700;
+  color: var(--accent);
+  position: relative;
+  display: inline-block;
+}
+
+/* Underline Effect */
+
+.section-title h2::after {
+  content: "";
+  width: 70px;
+  height: 4px;
+  background: var(--accent);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -12px;
+  border-radius: 20px;
+}
+
+/* =========================
+   COMMON CARD STYLE
+========================= */
+
+.card {
+  background: var(--white);
+  border-radius: 18px;
+  box-shadow: var(--shadow-light);
+  transition: var(--transition);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-medium);
+}
+
+/* =========================
+   CUSTOM SCROLLBAR
+========================= */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--accent);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--dark);
+}
+
+/* =========================
+   TEXT SELECTION
+========================= */
+
+::selection {
+  background: var(--accent);
+  color: white;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+  .section {
+    padding: 80px 5%;
+  }
+
+  .section-title h2 {
+    font-size: 32px;
+  }
 }

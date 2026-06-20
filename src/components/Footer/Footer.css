@@ -1,12 +1,20 @@
-footer{
-  margin-top:80px;
-  background:#38bdf8;
-  text-align:center;
-  padding:30px;
-  color:#111827;
-  border-top:1px solid rgba(255,255,255,.05);
+footer {
+  margin-top: 80px;
+
+  background: #06202B;
+
+  text-align: center;
+
+  padding: 35px 20px;
+
+  color: #FDEB9E;
+
+  border-top: 4px solid #077A7D;
 }
 
-footer p{
-  font-size:15px;
+footer p {
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+  color: #FDEB9E;
 }

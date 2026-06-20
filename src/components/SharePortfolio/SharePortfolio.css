@@ -6,33 +6,44 @@
   max-width: 1200px;
   margin: 80px auto 0;
   padding: 40px;
+
   text-align: center;
 
-  background: linear-gradient(135deg,
-      rgba(15, 23, 42, 0.95),
-      rgba(2, 6, 23, 0.95));
+  background: #ffffff;
 
-  border: 1px solid rgba(56, 189, 248, 0.15);
+  border: 1px solid rgba(7, 122, 125, 0.15);
+
   border-radius: 20px;
 
-  backdrop-filter: blur(10px);
+  box-shadow: 0 10px 30px rgba(6, 32, 43, 0.08);
+
   overflow: hidden;
 }
+
+/* ==================================
+   HEADING
+================================== */
 
 .share-portfolio h3 {
   font-size: 2rem;
   font-weight: 700;
-  color: #38bdf8;
+
+  color: #077A7D;
+
   margin-bottom: 16px;
 }
 
 .share-portfolio p {
   max-width: 750px;
+
   margin: 0 auto 32px;
 
-  color: #cbd5e1;
+  color: #06202B;
+
   font-size: 1rem;
   line-height: 1.8;
+
+  opacity: 0.9;
 }
 
 /* ==================================
@@ -43,6 +54,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
   gap: 16px;
   flex-wrap: wrap;
 }
@@ -56,7 +68,7 @@
   border: none;
   outline: none;
 
-  background: #0f172a;
+  background: #077A7D;
   color: #ffffff;
 
   text-decoration: none;
@@ -77,21 +89,24 @@
 
 .copy-btn:hover,
 .contact-action:hover {
-  background: #38bdf8;
+  background: #06202B;
+
   transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(56, 189, 248, 0.25);
+
+  box-shadow: 0 10px 25px rgba(6, 32, 43, 0.18);
 }
 
 .copy-btn i,
 .contact-action i {
   font-size: 1.1rem;
-  color: #38bdf8;
-  transition: color 0.3s ease;
+  color: #FDEB9E;
+
+  transition: all 0.3s ease;
 }
 
 .copy-btn:hover i,
 .contact-action:hover i {
-  color: #ffffff;
+  color: #7AE2CF;
 }
 
 /* ==================================
@@ -100,6 +115,7 @@
 
 .copy-btn {
   min-width: 280px;
+
   font-size: 1rem;
   font-weight: 600;
 }
@@ -110,6 +126,7 @@
 
 .contact-action {
   min-width: 180px;
+
   font-size: 1rem;
   font-weight: 500;
 }
@@ -119,18 +136,22 @@
 ================================== */
 
 @media (max-width: 768px) {
+
   .share-portfolio {
     padding: 30px 20px;
   }
 
   .share-buttons {
     display: grid;
+
     grid-template-columns: 1fr 1fr;
+
     gap: 12px;
   }
 
   .copy-btn {
     grid-column: 1 / -1;
+
     width: 100%;
     min-width: unset;
   }
@@ -146,6 +167,7 @@
 ================================== */
 
 @media (max-width: 480px) {
+
   .share-portfolio {
     padding: 25px 16px;
     margin-top: 60px;
@@ -158,12 +180,14 @@
   .share-portfolio p {
     font-size: 0.95rem;
     line-height: 1.7;
+
     margin-bottom: 24px;
   }
 
   .copy-btn,
   .contact-action {
     padding: 14px 16px;
+
     font-size: 0.95rem;
   }
 

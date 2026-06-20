@@ -11,27 +11,35 @@
 }
 
 .tab {
-  border: 2px solid rgba(56, 189, 248, 0.3);
-  background: transparent;
-  color: #94a3b8;
+  border: 2px solid rgba(7, 122, 125, 0.2);
+
+  background: #ffffff;
+  color: #06202B;
+
   padding: 14px 40px;
+
   border-radius: 999px;
+
   font-size: 1rem;
   font-weight: 600;
+
   cursor: pointer;
+
   transition: all 0.35s ease;
 }
 
 .tab:hover {
-  border-color: #38bdf8;
-  color: #fff;
+  border-color: #077A7D;
+  color: #077A7D;
+  transform: translateY(-2px);
 }
 
 .tab.active {
-  background: linear-gradient(135deg, #38bdf8, #2563eb);
-  color: #fff;
-  border-color: transparent;
-  box-shadow: 0 10px 25px rgba(56, 189, 248, 0.3);
+  background: #077A7D;
+  color: #ffffff;
+  border-color: #077A7D;
+
+  box-shadow: 0 10px 25px rgba(7, 122, 125, 0.25);
 }
 
 .fade {
@@ -54,7 +62,6 @@
    CONTAINERS
 ================================== */
 
-
 .project-container,
 .design-container {
   display: flex;
@@ -76,14 +83,19 @@
   width: 100%;
   height: 100%;
 
-  background: #111827;
+  background: #ffffff;
+
   border-radius: 18px;
   overflow: hidden;
-  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  border: 1px solid rgba(7, 122, 125, 0.12);
+
   transition: all 0.3s ease;
 
   display: flex;
   flex-direction: column;
+
+  box-shadow: 0 6px 18px rgba(6, 32, 43, 0.06);
 }
 
 .project-card:hover,
@@ -91,9 +103,9 @@
 .design-card:hover {
   transform: translateY(-8px);
 
-  border-color: #38bdf8;
+  border-color: #077A7D;
 
-  box-shadow: 0 0 25px rgba(56, 189, 248, 0.15);
+  box-shadow: 0 12px 30px rgba(7, 122, 125, 0.18);
 }
 
 /* ==================================
@@ -124,14 +136,14 @@
 
 .project-content h3,
 .design-content h3 {
-  color: #38bdf8;
+  color: #077A7D;
   font-size: 1.25rem;
   margin-bottom: 12px;
 }
 
 .project-content p,
 .design-content p {
-  color: #cbd5e1;
+  color: #06202B;
   font-size: 0.95rem;
   line-height: 1.6;
 
@@ -151,14 +163,15 @@
 }
 
 .project-tech span {
-  background: #1e293b;
-  color: #fff;
+  background: #7AE2CF;
+  color: #06202B;
 
   padding: 6px 12px;
 
   border-radius: 20px;
 
   font-size: 12px;
+  font-weight: 500;
 }
 
 /* ==================================
@@ -176,8 +189,8 @@
 .design-btn {
   text-decoration: none;
 
-  background: #38bdf8;
-  color: #0f172a;
+  background: #077A7D;
+  color: #ffffff;
 
   padding: 10px 16px;
 
@@ -186,12 +199,14 @@
   font-size: 14px;
   font-weight: 600;
 
-  transition: 0.3s;
+  transition: all 0.3s ease;
 }
 
 .project-links a:hover,
 .design-btn:hover {
   transform: translateY(-3px);
+
+  background: #06202B;
 }
 
 /* ==================================
@@ -208,7 +223,7 @@
 ================================== */
 
 .design-card {
-  border: 1px solid rgba(56, 189, 248, 0.15);
+  border: 1px solid rgba(7, 122, 125, 0.15);
 }
 
 .design-content {
@@ -225,69 +240,25 @@
 }
 
 .tool-badge {
-  color: #38bdf8;
+  color: #077A7D;
 
-  border: 1px solid #38bdf8;
+  border: 1px solid #077A7D;
 
   padding: 6px 14px;
 
   border-radius: 20px;
 
   font-size: 12px;
+  font-weight: 500;
+
+  background: rgba(122, 226, 207, 0.2);
 }
 
 /* ==================================
    RESPONSIVE
 ================================== */
 
-/* 5 Cards */
-
-@media (min-width: 1700px) {
-
-  .project-container,
-  .design-container {
-    grid-template-columns: repeat(5, 1fr);
-  }
-}
-
-/* 4 Cards */
-
-@media (max-width: 1699px) {
-
-  .project-container,
-  .design-container {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-
-/* 3 Cards */
-
-@media (max-width: 1300px) {
-
-  .project-container,
-  .design-container {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-/* 2 Cards */
-
-@media (max-width: 900px) {
-
-  .project-container,
-  .design-container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-/* 1 Card */
-
 @media (max-width: 600px) {
-
-  .project-container,
-  .design-container {
-    grid-template-columns: 1fr;
-  }
 
   .project-links {
     flex-direction: column;

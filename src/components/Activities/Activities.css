@@ -1,29 +1,39 @@
-
 .activities-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 30px;
 }
 
+/* Activity Card */
+
 .activity-card {
-  background: #111827;
+  background: #ffffff;
+
   padding: 40px 30px;
+
   border-radius: 22px;
+
   text-align: center;
 
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(7, 122, 125, 0.15);
 
-  transition: all 0.4s ease;
+  box-shadow: 0 8px 20px rgba(6, 32, 43, 0.08);
+
+  transition: all 0.35s ease;
 
   position: relative;
   overflow: hidden;
 }
 
 .activity-card:hover {
-  transform: translateY(-10px);
-  border-color: #38bdf8;
-  box-shadow: 0 0 25px rgba(56, 189, 248, 0.25);
+  transform: translateY(-8px);
+
+  border-color: #077A7D;
+
+  box-shadow: 0 12px 30px rgba(7, 122, 125, 0.18);
 }
+
+/* Icon Circle */
 
 .activity-icon {
   width: 80px;
@@ -37,57 +47,45 @@
 
   border-radius: 50%;
 
-  background: linear-gradient(135deg, #38bdf8, #9333ea);
+  background: linear-gradient(135deg,
+      #7AE2CF,
+      #077A7D);
 
-  box-shadow: 0 0 20px rgba(56, 189, 248, 0.3);
+  box-shadow: 0 8px 20px rgba(7, 122, 125, 0.2);
 }
 
 .activity-icon i {
-  color: white;
+  color: #ffffff;
   font-size: 32px;
 }
 
+/* Title */
+
 .activity-card h3 {
-  color: #38bdf8;
+  color: #077A7D;
+
   margin-bottom: 18px;
+
   font-size: 24px;
+
+  font-weight: 600;
 }
+
+/* Description */
 
 .activity-card p {
-  color: #cbd5e1;
+  color: #06202B;
+
   line-height: 1.9;
+
   font-size: 15px;
+
+  opacity: 0.9;
 }
 
+/* Tablet */
+
 @media (max-width: 768px) {
-  .timeline::before {
-    left: 20px;
-    transform: none;
-  }
-
-  .timeline-item {
-    width: 100%;
-    left: 0 !important;
-
-    padding-left: 60px;
-    padding-right: 0;
-  }
-
-  .timeline-item::before {
-    display: none;
-  }
-
-  .timeline-item::after {
-    left: 12px !important;
-  }
-
-  .timeline-content {
-    padding: 25px;
-  }
-
-  .timeline-content h3 {
-    font-size: 20px;
-  }
 
   .activities-container {
     grid-template-columns: 1fr;
@@ -107,14 +105,9 @@
   }
 }
 
-@media (max-width: 480px) {
-  .timeline-content {
-    padding: 22px;
-  }
+/* Mobile */
 
-  .timeline-content h3 {
-    font-size: 18px;
-  }
+@media (max-width: 480px) {
 
   .activity-card h3 {
     font-size: 20px;
