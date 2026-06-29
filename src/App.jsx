@@ -9,8 +9,10 @@ import Activities from "./components/Activities/Activities";
 import Contact from "./components/Contact/Contact";
 import SharePortfolio from "./components/SharePortfolio/SharePortfolio";
 import Footer from "./components/Footer/Footer";
+import useReveal from "./hooks/useReveal";
 
 function App() {
+  useReveal();
   return (
     <>
       <Navbar />

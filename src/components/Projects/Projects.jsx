@@ -121,157 +121,159 @@ const Projects = () => {
   ];
 
   return (
-    <section className="projects section" id="projects">
-      <div className="section-title">
-        <h2>My Works</h2>
-      </div>
+    <section className="section reveal-left">
+      <section className="projects section" id="projects">
+        <div className="section-title">
+          <h2>My Works</h2>
+        </div>
 
-      {/* Tabs */}
+        {/* Tabs */}
 
-      <div className="tabs-container">
-        <button
-          className={activeTab === "projects" ? "tab active" : "tab"}
-          onClick={() => setActiveTab("projects")}
-        >
-          Projects
-        </button>
+        <div className="tabs-container">
+          <button
+            className={activeTab === "projects" ? "tab active" : "tab"}
+            onClick={() => setActiveTab("projects")}
+          >
+            Projects
+          </button>
 
-        <button
-          className={activeTab === "mini" ? "tab active" : "tab"}
-          onClick={() => setActiveTab("mini")}
-        >
-          Mini Projects
-        </button>
+          <button
+            className={activeTab === "mini" ? "tab active" : "tab"}
+            onClick={() => setActiveTab("mini")}
+          >
+            Mini Projects
+          </button>
 
-        <button
-          className={activeTab === "designs" ? "tab active" : "tab"}
-          onClick={() => setActiveTab("designs")}
-        >
-          Designs
-        </button>
-      </div>
+          <button
+            className={activeTab === "designs" ? "tab active" : "tab"}
+            onClick={() => setActiveTab("designs")}
+          >
+            Designs
+          </button>
+        </div>
 
-      {/* PROJECTS */}
+        {/* PROJECTS */}
 
-      {activeTab === "projects" && (
-        <div className="project-container fade">
-          {projects.map((project, index) => (
-            <div className="project-card" key={index}>
-              <img src={project.image} alt={project.title} />
+        {activeTab === "projects" && (
+          <div className="project-container fade">
+            {projects.map((project, index) => (
+              <div className="project-card" key={index}>
+                <img src={project.image} alt={project.title} />
 
-              <div className="project-content">
-                <h3>{project.title}</h3>
+                <div className="project-content">
+                  <h3>{project.title}</h3>
 
-                <p>{project.description}</p>
+                  <p>{project.description}</p>
 
-                <div className="project-tech">
-                  {project.tech.map((tech, i) => (
-                    <span key={i}>{tech}</span>
-                  ))}
-                </div>
+                  <div className="project-tech">
+                    {project.tech.map((tech, i) => (
+                      <span key={i}>{tech}</span>
+                    ))}
+                  </div>
 
-                <div className="project-links">
-                  <a
-                    href={project.demo}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Live Demo
-                  </a>
+                  <div className="project-links">
+                    <a
+                      href={project.demo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Live Demo
+                    </a>
 
-                  <a
-                    href={project.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    GitHub
-                  </a>
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      GitHub
+                    </a>
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
-        </div>
-      )}
+            ))}
+          </div>
+        )}
 
-      {/* MINI PROJECTS */}
+        {/* MINI PROJECTS */}
 
-      {activeTab === "mini" && (
-        <div className="project-container fade">
-          {miniProjects.map((project, index) => (
-            <div className="project-card mini-card" key={index}>
-              <img src={project.image} alt={project.title} />
+        {activeTab === "mini" && (
+          <div className="project-container fade">
+            {miniProjects.map((project, index) => (
+              <div className="project-card mini-card" key={index}>
+                <img src={project.image} alt={project.title} />
 
-              <div className="project-content">
-                <h3>{project.title}</h3>
+                <div className="project-content">
+                  <h3>{project.title}</h3>
 
-                <p>{project.description}</p>
+                  <p>{project.description}</p>
 
-                <div className="project-links">
-                  <a
-                    href={project.demo}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    View Project
-                  </a>
+                  <div className="project-links">
+                    <a
+                      href={project.demo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      View Project
+                    </a>
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
-        </div>
-      )}
+            ))}
+          </div>
+        )}
 
-      {/* DESIGNS */}
+        {/* DESIGNS */}
 
-      {activeTab === "designs" && (
-        <div className="design-container fade">
-          {designs.map((design, index) => (
-            <div className="design-card" key={index}>
-              <img src={design.image} alt={design.title} />
+        {activeTab === "designs" && (
+          <div className="design-container fade">
+            {designs.map((design, index) => (
+              <div className="design-card" key={index}>
+                <img src={design.image} alt={design.title} />
 
-              <div className="design-content">
-                <div className="design-header">
-                  <h3>{design.title}</h3>
-                  <span className="tool-badge">{design.tool}</span>
+                <div className="design-content">
+                  <div className="design-header">
+                    <h3>{design.title}</h3>
+                    <span className="tool-badge">{design.tool}</span>
+                  </div>
+
+                  <p>{design.description}</p>
+
+                  {design.tool === "Canva" ? (
+                    <button
+                      className="design-btn"
+                      onClick={() => {
+                        setModalTitle("Canva Designs");
+                        setSelectedDesigns(canvaDesigns);
+                        setShowDesignModal(true);
+                      }}
+                    >
+                      View Designs
+                    </button>
+                  ) : (
+                    <button
+                      className="design-btn"
+                      onClick={() => {
+                        setModalTitle("Figma Designs");
+                        setSelectedDesigns(figmaDesigns);
+                        setShowDesignModal(true);
+                      }}
+                    >
+                      View Designs
+                    </button>
+                  )}
                 </div>
-
-                <p>{design.description}</p>
-
-                {design.tool === "Canva" ? (
-                  <button
-                    className="design-btn"
-                    onClick={() => {
-                      setModalTitle("Canva Designs");
-                      setSelectedDesigns(canvaDesigns);
-                      setShowDesignModal(true);
-                    }}
-                  >
-                    View Designs
-                  </button>
-                ) : (
-                  <button
-                    className="design-btn"
-                    onClick={() => {
-                      setModalTitle("Figma Designs");
-                      setSelectedDesigns(figmaDesigns);
-                      setShowDesignModal(true);
-                    }}
-                  >
-                    View Designs
-                  </button>
-                )}
               </div>
-            </div>
-          ))}
-        </div>
-      )}
+            ))}
+          </div>
+        )}
 
-      <DesignModal
-        isOpen={showDesignModal}
-        onClose={() => setShowDesignModal(false)}
-        designs={selectedDesigns}
-        title={modalTitle}
-      />
+        <DesignModal
+          isOpen={showDesignModal}
+          onClose={() => setShowDesignModal(false)}
+          designs={selectedDesigns}
+          title={modalTitle}
+        />
+      </section>
     </section>
   );
 };

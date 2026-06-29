@@ -27,9 +27,7 @@ const Contact = () => {
     setSuccess("");
     setErrorMsg("");
 
-    const { error } = await supabase
-      .from("contacts")
-      .insert([formData]);
+    const { error } = await supabase.from("contacts").insert([formData]);
 
     setLoading(false);
 
@@ -50,69 +48,60 @@ const Contact = () => {
   };
 
   return (
-    <section className="contact section" id="contact">
-      <div className="section-title">
-        <h2>Contact Me</h2>
-      </div>
-
-      <form onSubmit={handleSubmit} className="contact-form">
-        <div className="contact-row">
-          <input
-            type="text"
-            name="name"
-            placeholder="Your Name"
-            value={formData.name}
-            onChange={handleChange}
-            required
-          />
-
-          <input
-            type="email"
-            name="email"
-            placeholder="Your Email"
-            value={formData.email}
-            onChange={handleChange}
-            required
-          />
+    <section className="reveal-rotate">
+      <section className="contact section" id="contact">
+        <div className="section-title">
+          <h2>Contact Me</h2>
         </div>
 
-        <input
-          type="text"
-          name="subject"
-          placeholder="Subject"
-          value={formData.subject}
-          onChange={handleChange}
-          required
-        />
+        <form onSubmit={handleSubmit} className="contact-form">
+          <div className="contact-row">
+            <input
+              type="text"
+              name="name"
+              placeholder="Your Name"
+              value={formData.name}
+              onChange={handleChange}
+              required
+            />
 
-        <textarea
-          name="message"
-          placeholder="Your Message"
-          rows="6"
-          value={formData.message}
-          onChange={handleChange}
-          required
-        />
+            <input
+              type="email"
+              name="email"
+              placeholder="Your Email"
+              value={formData.email}
+              onChange={handleChange}
+              required
+            />
+          </div>
 
-        {success && (
-          <p className="success-message">
-            {success}
-          </p>
-        )}
+          <input
+            type="text"
+            name="subject"
+            placeholder="Subject"
+            value={formData.subject}
+            onChange={handleChange}
+            required
+          />
 
-        {errorMsg && (
-          <p className="error-message">
-            {errorMsg}
-          </p>
-        )}
+          <textarea
+            name="message"
+            placeholder="Your Message"
+            rows="6"
+            value={formData.message}
+            onChange={handleChange}
+            required
+          />
 
-        <button
-          type="submit"
-          disabled={loading}
-        >
-          {loading ? "Sending..." : "Send Message"}
-        </button>
-      </form>
+          {success && <p className="success-message">{success}</p>}
+
+          {errorMsg && <p className="error-message">{errorMsg}</p>}
+
+          <button type="submit" disabled={loading}>
+            {loading ? "Sending..." : "Send Message"}
+          </button>
+        </form>
+      </section>
     </section>
   );
 };

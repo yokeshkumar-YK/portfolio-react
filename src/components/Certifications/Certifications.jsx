@@ -58,41 +58,43 @@ const Certifications = () => {
   };
 
   return (
-    <section className="certifications section" id="certifications">
-      <div className="section-title">
-        <h2>Certifications</h2>
-      </div>
-
-      <div className="certificate-slider">
-        <button
-          className="slide-btn"
-          onClick={scrollLeft}
-          aria-label="Scroll Left"
-        >
-          <i className="fa-solid fa-angle-left"></i>
-        </button>
-
-        <div className="certificate-container" ref={certificateRef}>
-          {certificates.map((cert, index) => (
-            <div className="certificate-card" key={index}>
-              <img src={cert.image} alt={cert.alt} />
-
-              <div className="certificate-content">
-                <h3>{cert.title}</h3>
-                <p>{cert.issuer}</p>
-              </div>
-            </div>
-          ))}
+    <section className="section reveal-right">
+      <section className="certifications section" id="certifications">
+        <div className="section-title">
+          <h2>Certifications</h2>
         </div>
 
-        <button
-          className="slide-btn"
-          onClick={scrollRight}
-          aria-label="Scroll Right"
-        >
-          <i className="fa-solid fa-angle-right"></i>
-        </button>
-      </div>
+        <div className="certificate-slider">
+          <button
+            className="slide-btn"
+            onClick={scrollLeft}
+            aria-label="Scroll Left"
+          >
+            <i className="fa-solid fa-angle-left"></i>
+          </button>
+
+          <div className="certificate-container" ref={certificateRef}>
+            {certificates.map((cert, index) => (
+              <div className="certificate-card" key={index}>
+                <img src={cert.image} alt={cert.alt} />
+
+                <div className="certificate-content">
+                  <h3>{cert.title}</h3>
+                  <p>{cert.issuer}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <button
+            className="slide-btn"
+            onClick={scrollRight}
+            aria-label="Scroll Right"
+          >
+            <i className="fa-solid fa-angle-right"></i>
+          </button>
+        </div>
+      </section>
     </section>
   );
 };

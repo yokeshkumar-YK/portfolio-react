@@ -157,3 +157,150 @@ img {
     font-size: 32px;
   }
 }
+
+/* ===========================
+   SCROLL REVEAL
+=========================== */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(70px);
+  transition:
+    opacity .8s ease,
+    transform .8s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Left */
+
+.reveal-left {
+  opacity: 0;
+  transform: translateX(-80px);
+  transition: all .8s ease;
+}
+
+.reveal-left.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Right */
+
+.reveal-right {
+  opacity: 0;
+  transform: translateX(80px);
+  transition: all .8s ease;
+}
+
+.reveal-right.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Zoom */
+
+.reveal-scale {
+  opacity: 0;
+  transform: scale(.8);
+  transition: all .8s ease;
+}
+
+.reveal-scale.active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* ==========================
+   SCROLL REVEAL ANIMATIONS
+========================== */
+
+.reveal {
+  opacity: 0;
+  transition: all 0.8s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+}
+
+/* Bottom → Up */
+
+.reveal-up {
+  opacity: 0;
+  transform: translateY(80px);
+  transition: all .8s ease;
+}
+
+.reveal-up.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Top → Down */
+
+.reveal-down {
+  opacity: 0;
+  transform: translateY(-80px);
+  transition: all .8s ease;
+}
+
+.reveal-down.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Left → Right */
+
+.reveal-left {
+  opacity: 0;
+  transform: translateX(-80px);
+  transition: all .8s ease;
+}
+
+.reveal-left.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Right → Left */
+
+.reveal-right {
+  opacity: 0;
+  transform: translateX(80px);
+  transition: all .8s ease;
+}
+
+.reveal-right.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Zoom */
+
+.reveal-scale {
+  opacity: 0;
+  transform: scale(.8);
+  transition: all .8s ease;
+}
+
+.reveal-scale.active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Rotation */
+
+.reveal-rotate {
+  opacity: 0;
+  transform: rotate(-10deg) scale(.9);
+  transition: all .8s ease;
+}
+
+.reveal-rotate.active {
+  opacity: 1;
+  transform: rotate(0deg) scale(1);
+}

@@ -97,15 +97,27 @@ function Hero() {
         {/* RIGHT */}
 
         <div className="hero-image">
-          <div className="image-wrapper">
-            <img src="/assets/profile_photo.png" alt="Yokesh Kumar" />
+          <div className="id-card-wrapper">
+            <div className="rope"></div>
+
+            <div className="clip-ring"></div>
+
+            <div className="id-card">
+              <div className="hole"></div>
+
+              <div className="photo-frame">
+                <img
+                  src="/assets/profile_photo.png"
+                  alt="Yokesh Kumar"
+                  className="id-photo"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
   );
 }
-
-
 
 export default Hero;

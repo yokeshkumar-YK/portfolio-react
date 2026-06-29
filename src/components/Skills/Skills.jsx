@@ -95,8 +95,14 @@ const Skills = () => {
 
       <div className="skills-content">
         <div className="skills-grid">
-          {skillsData[activeTab].map((skill) => (
-            <div className="skill-card" key={skill.name}>
+          {skillsData[activeTab].map((skill, index) => (
+            <div
+              className="skill-card"
+              key={skill.name}
+              style={{
+                animationDelay: `${index * 0.12}s`,
+              }}
+            >
               <div className="skill-icon">{skill.icon}</div>
               <h4>{skill.name}</h4>
             </div>
