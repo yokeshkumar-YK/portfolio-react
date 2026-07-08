@@ -16,9 +16,13 @@ function App() {
   return (
     <>
       <Navbar />
+
       <Hero />
+      <div className="section-divider"></div>
       <About />
+      <div className="section-divider"></div>
       <Skills />
+      <div className="section-divider"></div>
       <Projects />
       <Certifications />
       <Experience />
